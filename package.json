@@ -1,0 +1,9 @@
+{
+  "name": "admin-gmall-fe",
+  "version": "1.0.0",
+  "description": "gitmall 后台前端",
+  "main": "index.js",
+  "repository": "git@github.com:KevinTroyT/admin-gmall-fe.git",
+  "author": "KevinTroyT <q964049459@gmail.com>",
+  "license": "MIT"
+}
