@@ -3,12 +3,13 @@
  * @Date:   2018-12-17T11:43:04+08:00
  * @Email:  q964049459@gmail.com
  * @Last modified by:   troykevin
- * @Last modified time: 2018-12-17T16:11:25+08:00
+ * @Last modified time: 2018-12-19T23:06:36+08:00
  */
 const ExtractTextPlugin     = require('extract-text-webpack-plugin');
 const webpack               = require('webpack');
 const HtmlWebpackPlugin     = require('html-webpack-plugin');
 const path                  = require('path');
+let WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
 module.exports = {
     entry : './src/app.jsx',
     output: {
@@ -17,8 +18,17 @@ module.exports = {
             ? '/dist/' : '//admin.nicegmall.com',
         filename : 'js/app.js'
     },
+    resolve:{
+        alias : {
+            page : path.resolve(__dirname,'src/page'),
+            component : path.resolve(__dirname,'src/component')
+        }
+    },
     devServer: {
-        port : 8087
+        port : 8087,
+        historyApiFallback : {
+            index : '/dist/index.html'
+        }
     },
     module: {
         rules: [
