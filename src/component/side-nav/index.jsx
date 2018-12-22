@@ -3,7 +3,7 @@
  * @Date:   2018-12-20T00:04:26+08:00
  * @Email:  q964049459@gmail.com
  * @Last modified by:   troykevin
- * @Last modified time: 2018-12-20T01:29:23+08:00
+ * @Last modified time: 2018-12-20T22:16:12+08:00
  */
  import React from 'react';
  import { Link, NavLink } from 'react-router-dom';
@@ -19,13 +19,13 @@
                     <ul className="nav">
                         <li>
                             <NavLink exact activeClassName="active-menu" to="/">
-                                <i className="fa fa-dashboard"></i>
+                                <i className="fa fa-home"></i>
                                 <span>首页</span>
                         </NavLink>
                         </li>
                         <li className="">
                             <Link to="/product">
-                                <i className="fa fa-sitemap"></i>
+                                <i className="fa fa-list"></i>
                                 商品
                                 <span className="fa arrow"></span>
                             </Link>
@@ -40,7 +40,7 @@
                          </li>
                          <li className="">
                              <NavLink to="/order">
-                                 <i className="fa fa-sitemap"></i>
+                                 <i className="fa fa-check-square"></i>
                                  订单
                                  <span className="fa arrow"></span>
                              </NavLink>
@@ -52,7 +52,7 @@
                          </li>
                          <li className="">
                              <NavLink to="/user">
-                                <i className="fa fa-sitemap"></i>
+                                <i className="fa fa-user-circle"></i>
                                 用户
                                 <span className="fa arrow"></span>
                             </NavLink>

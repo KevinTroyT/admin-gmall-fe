@@ -3,14 +3,14 @@
  * @Date:   2018-12-19T23:33:14+08:00
  * @Email:  q964049459@gmail.com
  * @Last modified by:   troykevin
- * @Last modified time: 2018-12-20T01:04:33+08:00
+ * @Last modified time: 2018-12-20T17:14:50+08:00
  */
  /**
   * @Author: troykevin
   * @Date:   2018-12-19T22:34:29+08:00
   * @Email:  q964049459@gmail.com
  * @Last modified by:   troykevin
- * @Last modified time: 2018-12-20T01:04:33+08:00
+ * @Last modified time: 2018-12-20T17:14:50+08:00
   */
   /*----------------------------------------------
   Author : www.webthemez.com
@@ -404,6 +404,11 @@
   }
   .active-menu i {
       color: #fff !important;
+  }
+  #errAlert{
+      position: fixed;
+      z-index: 9999;
+      display: none;
   }
   .arrow {
       float: right;
