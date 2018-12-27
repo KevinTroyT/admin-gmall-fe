@@ -3,7 +3,7 @@
  * @Date:   2018-12-20T14:08:56+08:00
  * @Email:  q964049459@gmail.com
  * @Last modified by:   troykevin
- * @Last modified time: 2018-12-21T14:42:56+08:00
+ * @Last modified time: 2018-12-23T02:20:51+08:00
  */
 class GUtil{
     request(param){
@@ -40,8 +40,18 @@ class GUtil{
             result = queryString.match(reg);
         return result ? decodeURIComponent(result[2]) : null;
     }
+    successTips(res){
+        $("#errAlert").removeClass('alert-danger');
+        $("#errAlert").addClass('alert-success')
+        $("#alertTitle").text("好消息!!");
+        $(".errMsg").text(res || "您的操作成功");
+        $("#errAlert").fadeIn('fast');
+    }
     errorTips(errMsg){
-        $(".errMsg").text(errMsg);
+        $("#errAlert").removeClass('alert-success');
+        $("#errAlert").addClass('alert-danger')
+        $("#alertTitle").text("发生了一个错误!!");
+        $(".errMsg").text(errMsg || "哪里不对了");
         $("#errAlert").fadeIn('fast');
     }
     // 本地存储存取
