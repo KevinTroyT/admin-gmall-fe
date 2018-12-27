@@ -34,7 +34,7 @@
                                      <NavLink activeClassName="active-menu" to="/product">商品管理</NavLink>
                                 </li>
                                 <li>
-                                     <NavLink to="/product-category" activeClassName="active-menu">品类管理</NavLink>
+                                     <NavLink to="/product-category" activeClassName="active-menu">分类管理</NavLink>
                                 </li>
                             </ul>
                          </li>

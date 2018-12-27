@@ -3,7 +3,7 @@
  * @Date:   2018-12-17T11:45:32+08:00
  * @Email:  q964049459@gmail.com
  * @Last modified by:   troykevin
- * @Last modified time: 2018-12-22T21:19:10+08:00
+ * @Last modified time: 2018-12-27T15:05:42+08:00
  */
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -23,7 +23,7 @@ class App extends React.Component{
                 <Switch>
                     <Route exact path="/" component={Home}/>
                     <Route path="/product" component={ProductRouter}/>
-                    <Route path="/product-category" component={Home}/>
+                    <Route path="/product-category" component={ProductRouter}/>
                     <Route path="/user/index" component={UserList}/>
                     <Redirect exact from="/user" to="/user/index" />
                     <Route component={ErrorPage}/>

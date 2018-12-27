@@ -82,7 +82,7 @@
              this.onPropsCategoryChange();
          });
      }
-     // 选择二级品类
+     // 选择二级分类
      onSecondCategoryChange(e){
          if(this.props.readOnly){
              return;
@@ -103,7 +103,7 @@
          if(this.state.secondCategoryId){
              categoryChangeAble && this.props.onCategoryChange(this.state.secondCategoryId, this.state.firstCategoryId);
          }else{
-             // 如果没有二级品类
+             // 如果没有二级分类
              categoryChangeAble && this.props.onCategoryChange(this.state.firstCategoryId, 0);
          }
      }

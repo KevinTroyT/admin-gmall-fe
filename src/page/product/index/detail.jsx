@@ -3,7 +3,7 @@
  * @Date:   2018-12-27T00:37:56+08:00
  * @Email:  q964049459@gmail.com
  * @Last modified by:   troykevin
- * @Last modified time: 2018-12-27T14:31:44+08:00
+ * @Last modified time: 2018-12-27T14:41:54+08:00
  */
  import React from 'react';
  import PageTitle from 'component/page-title/index.jsx';
