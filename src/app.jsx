@@ -3,7 +3,7 @@
  * @Date:   2018-12-17T11:45:32+08:00
  * @Email:  q964049459@gmail.com
  * @Last modified by:   troykevin
- * @Last modified time: 2018-12-27T15:05:42+08:00
+ * @Last modified time: 2018-12-29T13:15:19+08:00
  */
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -14,7 +14,8 @@ import Login from 'page/login/index.jsx';
 import ErrorPage from 'page/error/index.jsx';
 import UserList from 'page/user/index.jsx';
 import ProductRouter from 'page/product/router.jsx';
-
+import OrderList from 'page/order/index.jsx';
+import OrderDetail from 'page/order/detail.jsx';
 
 class App extends React.Component{
     render(){
@@ -24,8 +25,11 @@ class App extends React.Component{
                     <Route exact path="/" component={Home}/>
                     <Route path="/product" component={ProductRouter}/>
                     <Route path="/product-category" component={ProductRouter}/>
+                    <Route path="/order/index" component={OrderList}/>
+                    <Route path="/order/detail/:orderNumber" component={OrderDetail}/>
                     <Route path="/user/index" component={UserList}/>
                     <Redirect exact from="/user" to="/user/index" />
+                    <Redirect exact from="/order" to="/order/index" />
                     <Route component={ErrorPage}/>
                 </Switch>
             </Layout>

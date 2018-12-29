@@ -3,10 +3,10 @@
  * @Date:   2018-12-22T21:25:33+08:00
  * @Email:  q964049459@gmail.com
  * @Last modified by:   troykevin
- * @Last modified time: 2018-12-24T15:28:55+08:00
+ * @Last modified time: 2018-12-27T20:29:37+08:00
  */
  import React from 'react';
-
+ import "./index.scss";
 
  // 通用表格封装
  class TableList extends React.Component{
@@ -24,7 +24,7 @@
      }
      render(){
          let tableHeader = this.props.tableHeads.map((tableHead,index) => {
-             return <td key={index}>{tableHead}</td>
+             return <th key={index}>{tableHead}</th>
         })
 
          //列表内容
@@ -41,7 +41,7 @@
          return (
              <div className="row">
                  <div className="col-md-12">
-                     <table className="table table-striped table-bordered">
+                     <table className="table table-bordered">
                         <thead>
                             <tr>{tableHeader}</tr>
                         </thead>
