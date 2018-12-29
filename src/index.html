@@ -5,9 +5,23 @@
     <meta name="author" content="KevinTroyT">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>gmall-admin</title>
 </head>
 <body>
+    <div id="errAlert" class="alert alert-danger col-md-6 col-md-offset-3">
+        <a href="javascript:void(0)" class="close" onclick="alertClose()">&times;</a>
+        <h4 id="alertTitle">发生了一个错误！</h4>
+        <p>信息：<strong><span class="errMsg"></span></strong></p>
+    </div>
     <div id="app">test</div>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function alertClose(){
+            $("#errAlert").fadeOut('fast');
+        }
+    </script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

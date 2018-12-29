@@ -1,0 +1,41 @@
+/**
+ * @Author: troykevin
+ * @Date:   2018-12-20T00:01:59+08:00
+ * @Email:  q964049459@gmail.com
+// @Last modified by:   troykevin
+// @Last modified time: 2018-12-20T22:11:43+08:00
+ */
+.color-box{
+    display: block;
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px 0;
+    opacity: .9;
+    transition: .2s;
+    &:hover{
+        text-decoration: none;
+        color: #555;
+        opacity: 1;
+        transform: scale(1.08);
+    }
+    &:focus{
+        text-decoration: none;
+        color: #555;
+    }
+    .count{
+        font-size: 50px;
+        height: 80px;
+        line-height: 80px;
+    }
+    .desc{
+        font-size: 18px;
+        .fa{
+            font-size: 120px;
+            position: absolute;
+            left: 40px;
+            top: 40px;
+            opacity: .2;
+        }
+    }
+}

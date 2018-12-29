@@ -1,0 +1,17 @@
+// @Author: troykevin
+// @Date:   2018-12-27T00:30:58+08:00
+// @Email:  q964049459@gmail.com
+// @Last modified by:   troykevin
+// @Last modified time: 2018-12-27T00:31:52+08:00
+
+
+
+
+
+// BugFix：图片过于宽导致超出显示的问题解决
+
+
+
+.simditor-body{
+    overflow: auto;
+}

@@ -1,0 +1,13 @@
+// @Author: troykevin
+// @Date:   2018-12-27T20:26:58+08:00
+// @Email:  q964049459@gmail.com
+// @Last modified by:   troykevin
+// @Last modified time: 2018-12-27T20:30:39+08:00
+tbody{
+    tr{
+        background-color: #f9f9f9;
+        &:hover{
+            background-color: #e9e9e9;
+        }
+    }
+}
