@@ -3,19 +3,18 @@
  * @Date:   2018-12-17T11:43:04+08:00
  * @Email:  q964049459@gmail.com
  * @Last modified by:   troykevin
- * @Last modified time: 2018-12-29T14:52:36+08:00
+ * @Last modified time: 2018-12-29T20:38:07+08:00
  */
 const ExtractTextPlugin     = require('extract-text-webpack-plugin');
 const webpack               = require('webpack');
 const HtmlWebpackPlugin     = require('html-webpack-plugin');
 const path                  = require('path');
-let WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
+let WEBPACK_ENV = process.env.WEBPACK_ENV || 'dist';
 module.exports = {
     entry : './src/app.jsx',
     output: {
         path : path.resolve(__dirname,'dist'),
-        publicPath : WEBPACK_ENV === 'dev'
-            ? '/dist/' : '//s.gitmall.cn/admin-gmall-fe/dist/',
+        publicPath : WEBPACK_ENV === 'dev' ? '/dist/' : '//s.gitmall.cn/admin-gmall-fe/dist/',
         filename : 'js/app.js'
     },
     resolve:{
